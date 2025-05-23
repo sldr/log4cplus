@@ -78,7 +78,7 @@ namespace
             break;
 #endif
 
-#if (defined (LOG4CPLUS_HAVE_CODECVT_UTF16_FACET) || defined (WIN32)) \
+#if (defined (LOG4CPLUS_HAVE_CODECVT_UTF16_FACET) || defined (_WIN32)) \
     && defined (UNICODE)
         case PropertyConfigurator::fUTF16:
             pflags |= helpers::Properties::fUTF16;

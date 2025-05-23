@@ -919,7 +919,7 @@ struct _static_log4cplus_initializer
 } // namespace
 
 
-#else // defined (WIN32)
+#else // defined (_WIN32)
 namespace {
 
 #if ! defined (LOG4CPLUS_REQUIRE_EXPLICIT_INITIALIZATION)

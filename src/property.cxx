@@ -159,7 +159,7 @@ imbue_file_from_flags ([[maybe_unused]] tistream & file, unsigned flags)
                     static_cast<std::codecvt_mode>(std::consume_header | std::little_endian)>));
         break;
 
-#elif defined (UNICODE) && defined (WIN32)
+#elif defined (UNICODE) && defined (_WIN32)
     case Properties::fUTF16:
         file.imbue (
             std::locale (file.getloc (),

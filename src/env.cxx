@@ -317,7 +317,7 @@ static
 tstring
 get_current_dir ()
 {
-#if defined (WIN32)
+#if defined (_WIN32)
     tstring result (0x8000, LOG4CPLUS_TEXT ('\0'));
     DWORD len = GetCurrentDirectory (static_cast<DWORD>(result.size ()),
         &result[0]);
@@ -359,7 +359,7 @@ get_current_dir ()
 }
 
 
-#if defined (WIN32)
+#if defined (_WIN32)
 static
 tchar
 get_current_drive ()

@@ -135,7 +135,7 @@ LOG4CPLUS_PRIVATE
 bool
 trySetCloseOnExec (int fd)
 {
-#if defined (WIN32)
+#if defined (_WIN32)
     int ret = SetHandleInformation (get_os_HANDLE (fd), HANDLE_FLAG_INHERIT, 0);
     if (! ret)
     {
